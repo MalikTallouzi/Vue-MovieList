@@ -1,17 +1,15 @@
-<script setup></script>
+<script setup>
+import MovieForm from './components/MovieForm.vue'
+import MovieList from './components/MovieList.vue'
+</script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div class="container mt-5">
+    <h1>Min filmlista</h1>
+    <MovieForm />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+    <MovieList />
+  </div>
 </template>
 
 <style scoped>
